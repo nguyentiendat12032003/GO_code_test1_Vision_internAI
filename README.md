@@ -43,12 +43,30 @@ This script will load the trained model from savedmode/ and print evaluation met
 ## 🖼️ Classify a New Image
 To classify a single image (Dog or Cat) using the saved model:
 ```bash
-# Preprocess the image
-data = np.ndarray(shape=(1, 224, 224, 3), dtype=np.float32)
-
-image = Image.open("Image_Path").convert("RGB") #Replace imagepath to classify
+python load_savemode.py -imagepath Image_Path_Here
 ```
 Replace with your image path to classify the image
+
+## Demo
+### Input: 
+with a cat:
+
+<img width="500" height="374" alt="image" src="https://github.com/user-attachments/assets/b6043e44-294d-4430-8607-7501c0cd70bd" />
+
+### Output:
+
+<img width="224" height="224" alt="image" src="https://github.com/user-attachments/assets/39a4abfe-130e-4972-9cbd-0f4ce4e538c1" />
+
+### Input:
+with a dog:
+
+<img width="500" height="427" alt="image" src="https://github.com/user-attachments/assets/c65e4bfc-9edd-47c9-a079-b4499227a089" />
+
+### Output:
+
+<img width="224" height="224" alt="image" src="https://github.com/user-attachments/assets/b9a6e3a6-7cf3-46b1-99cf-1da409fc5d2c" />
+
+
 
 
 
