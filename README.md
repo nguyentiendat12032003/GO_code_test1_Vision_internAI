@@ -13,6 +13,7 @@ The dataset (~6000 images) was collected Roboflow
 │ └── labels.txt # Class labels
 ├── evaluate.py # Evaluate model performance
 ├── load_savemode.py # Classify new images by path
+├── app.py # Streamlit UI
 ├── requirements.txt # Python dependencies
 └── README.md # Documentation
 ```
