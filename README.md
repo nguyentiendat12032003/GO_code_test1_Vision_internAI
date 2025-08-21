@@ -16,17 +16,17 @@ The dataset (~6000 images) was collected Roboflow
 
 ## 🚀 Setup & Installation
 
-###1. Clone this repository and move into the project directory:
+##1. Clone this repository and move into the project directory:
 ```bash
    git clone <your-repo-url>
    cd GO_code_test1_Vision_internAI
 ```
-###2. (Optional but recommended) Create a virtual environment:
+##2. (Optional but recommended) Create a virtual environment:
 ```bash
 python -m venv .venv
 .venv\Scripts\activate      
 ```
-###3. Install dependencies:
+##3. Install dependencies:
 ```bash
 pip install -r requirements.txt
 ```
@@ -41,8 +41,12 @@ This script will load the trained model from savedmode/ and print evaluation met
 ##🖼️ Classify a New Image
 To classify a single image (Dog or Cat) using the saved model:
 ```bash
-python load_savemode.py --image <path-to-image>
+# Preprocess the image
+data = np.ndarray(shape=(1, 224, 224, 3), dtype=np.float32)
+
+image = Image.open("Image_Path").convert("RGB") #Replace imagepath to classify
 ```
+Replace with your image path to classify the image
 
 
 
