@@ -42,9 +42,9 @@ python evaluate.py
 
 This script will load the trained model from savedmode/ and print evaluation metrics (accuracy, loss, etc.) on the validation set.
 ## Report:
-[Dog and Cat Classification](https://github.com/nguyentiendat12032003/GO_code_test1_Vision_internAI/blob/main/Report_Ex1.md)
+[Dog and Cat Classification](https://github.com/nguyentiendat12032003/GO_code_test1_Vision_internAI/blob/main/document/Report_Ex1.md)
 
-[TTS_Vietnamese](https://github.com/nguyentiendat12032003/GO_code_test1_Vision_internAI/blob/main/Propose_TTS.md)
+[TTS_Vietnamese](https://github.com/nguyentiendat12032003/GO_code_test1_Vision_internAI/blob/main/document/Propose_TTS.md)
 ## Demo
 ### Run CLI
 
