@@ -46,7 +46,10 @@ To classify a single image (Dog or Cat) using the saved model:
 python load_savemode.py -imagepath Image_Path_Here
 ```
 Replace with your image path to classify the image
+## Report:
+[Dog and Cat Classification](https://github.com/nguyentiendat12032003/GO_code_test1_Vision_internAI/blob/main/Report_Ex1.md)
 
+[TTS_Vietnamese](https://github.com/nguyentiendat12032003/GO_code_test1_Vision_internAI/blob/main/Propose_TTS.md)
 ## Demo
 ### Input: 
 with a cat:
@@ -65,6 +68,7 @@ with a dog:
 ### Output:
 
 <img width="224" height="224" alt="image" src="https://github.com/user-attachments/assets/b9a6e3a6-7cf3-46b1-99cf-1da409fc5d2c" />
+
 
 
 
