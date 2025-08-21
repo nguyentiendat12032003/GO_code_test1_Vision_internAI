@@ -6,7 +6,7 @@ import numpy as np
 np.set_printoptions(suppress=True)
 
 # Load the model from SavedModel using TFSMLayer
-model = TFSMLayer("savedmode/model.savedmodel", call_endpoint="serving_default")
+model = TFSMLayer("saved_model/model.savedmodel", call_endpoint="serving_default")
 
 # Load the labels
 class_names = open("model/labels.txt", "r").readlines()

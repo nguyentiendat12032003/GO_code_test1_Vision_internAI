@@ -11,7 +11,7 @@ from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_sc
 np.set_printoptions(suppress=True)
 
 # Load model
-model = TFSMLayer("savedmode/model.savedmodel", call_endpoint="serving_default")
+model = TFSMLayer("saved_model/model.savedmodel", call_endpoint="serving_default")
 
 # Load labels
 class_names = [line.strip() for line in open("savedmode/labels.txt", "r").readlines()]
