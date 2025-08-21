@@ -4,31 +4,6 @@ This project demonstrates a simple **image classification** task using a model t
 The dataset (~6000 images) was collected Roboflow
 
 ---
-# How the Model Was Trained (Teachable Machine)
-
-Base Model: Transfer learning with a pre-trained CNN backbone (MobileNetV2 / EfficientNetLite) trained on ImageNet.
-
-Training Strategy:
-
-- The feature extractor layers of the base model are frozen (not updated).
-
-- A new dense classification head (fully connected layer + softmax) was added and trained with the dataset.
-
-Hyperparameters:
-
-- Epochs: 25 → The model was trained for 25 full passes over the dataset, enough for convergence without heavy overfitting.
-
-- Batch size: 16 → Each gradient update used 16 images at once, balancing between stability and speed on limited hardware.
-
-- Learning rate: 0.001 → A small learning rate ensured stable training, preventing the optimizer from overshooting minima.
-
-- Optimizer: Adam (adaptive learning rate optimization, widely used for deep learning).
-
-- Loss Function: Binary cross-entropy (since there are 2 classes: Dog vs Cat).
-
-Dataset: ~6000 labeled images (balanced between Dogs and Cats).
-
-Export: The trained model was exported in TensorFlow SavedModel format, compatible with Python, TensorFlow.js, and TensorFlow Lite.
 
 ## 📂 Project Structure
 ```bash
