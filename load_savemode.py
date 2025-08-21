@@ -14,7 +14,7 @@ class_names = open("model/labels.txt", "r").readlines()
 # Preprocess the image
 data = np.ndarray(shape=(1, 224, 224, 3), dtype=np.float32)
 
-image = Image.open("dataset/valid/cat/cat-1_jpg.rf.dfdaf1fded89a64424977ee56ea087eb.jpg").convert("RGB")
+image = Image.open("Image_Path").convert("RGB") #Replace imagepath to classify
 
 # Resize and crop to 224x224
 size = (224, 224)
