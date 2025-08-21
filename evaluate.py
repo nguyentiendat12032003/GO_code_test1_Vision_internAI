@@ -14,7 +14,7 @@ np.set_printoptions(suppress=True)
 model = TFSMLayer("saved_model/model.savedmodel", call_endpoint="serving_default")
 
 # Load labels
-class_names = [line.strip() for line in open("savedmode/labels.txt", "r").readlines()]
+class_names = [line.strip() for line in open("saved_mode/labels.txt", "r").readlines()]
 print("Classes:", class_names)
 
 # Validation dataset path

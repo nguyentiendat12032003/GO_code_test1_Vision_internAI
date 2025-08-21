@@ -16,7 +16,7 @@ def load_model():
 # Load labels once
 @st.cache_resource
 def load_labels():
-    return [line.strip() for line in open("model/labels.txt", "r").readlines()]
+    return [line.strip() for line in open("saved_model/labels.txt", "r").readlines()]
 
 model = load_model()
 class_names = load_labels()

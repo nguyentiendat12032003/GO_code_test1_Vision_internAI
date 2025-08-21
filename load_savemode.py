@@ -15,7 +15,7 @@ args = parser.parse_args()
 model = TFSMLayer("saved_model/model.savedmodel", call_endpoint="serving_default")
 
 # Load labels
-class_names = open("model/labels.txt", "r").readlines()
+class_names = open("saved_model/labels.txt", "r").readlines()
 
 # Preprocess image
 data = np.ndarray(shape=(1, 224, 224, 3), dtype=np.float32)
